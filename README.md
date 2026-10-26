@@ -7,6 +7,10 @@
 
 # Warden
 
+<p align="center">
+  <img src="assets/warden-team.png" alt="Warden — .NET malware analysis war room" width="720"/>
+</p>
+
 > **x64 .NET runtime sentinel for malware analysts** — catch reflective .NET
 > payloads as they materialize in memory, dump them, and verify the integrity
 > of the defence stack (AMSI / ETW / CLR) while the sample runs.
