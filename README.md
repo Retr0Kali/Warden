@@ -69,7 +69,7 @@ cd Warden
 build.bat
 ```
 
-or just push — **GitHub Actions** compiles `Warden.exe`, `Warden.dll` and
+**GitHub Actions** compiles `Warden.exe`, `Warden.dll` and
 `LoadSim.exe` on every push and publishes them as artifacts.
 
 **Verify the install** against the included benign simulator:
