@@ -70,7 +70,7 @@ build.bat
 ```
 
 **GitHub Actions** compiles `Warden.exe`, `Warden.dll` and
-`LoadSim.exe` on every push and publishes them as artifacts.
+`LoadSim.exe` on every push and publishes them as artifacts — [download the latest build here](https://github.com/Retr0Kali/Warden/actions/workflows/build.yml).
 
 **Verify the install** against the included benign simulator:
 
