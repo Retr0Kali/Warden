@@ -13,9 +13,7 @@
 
 </div>
 
-> ⚠️ **Authorized-lab tool.** Warden is defensive malware-*analysis* tooling.
-> Run it only on samples you are legally allowed to analyze, inside isolated
-> VMs you own. It is not a bypass tool and not an EDR replacement.
+
 
 ---
 
