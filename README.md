@@ -17,7 +17,7 @@
 ![platform](https://img.shields.io/badge/platform-Windows%20x64-blue)
 ![lang](https://img.shields.io/badge/lang-C%2FC%2B%2B-informational)
 ![license](https://img.shields.io/badge/license-MIT-green)
-![ci](https://img.shields.io/badge/CI-GitHub%20Actions-success)
+![ci](https://github.com/Retr0Kali/Warden/actions/workflows/build.yml/badge.svg)
 
 </div>
 
@@ -64,7 +64,7 @@ independent engines on top of it:
 **Build** (Visual Studio 2022, "x64 Native Tools Command Prompt"):
 
 ```bat
-git clone https://github.com/<you>/Warden.git
+git clone https://github.com/Retr0Kali/Warden.git
 cd Warden
 build.bat
 ```
