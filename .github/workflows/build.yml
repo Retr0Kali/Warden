@@ -1,0 +1,38 @@
+name: build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup MSVC x64
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
+      - name: Build (Warden.exe + Warden.dll + LoadSim.exe)
+        shell: cmd
+        run: build.bat
+
+      - name: Smoke test CLI
+        shell: cmd
+        run: |
+          bin\Warden.exe --help
+
+      - name: Upload binaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: warden-bin-x64
+          path: |
+            bin/Warden.exe
+            bin/Warden.dll
+            bin/LoadSim.exe
+            bin/Warden.pdb
+          if-no-files-found: error

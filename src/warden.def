@@ -1,0 +1,9 @@
+; Warden.dll exports
+;  InitWarden        - monitor bootstrap (remote thread / APC target)
+;  DllGetClassObject - CLR profiler COM entry point
+;  DllCanUnloadNow   - COM housekeeping (always S_FALSE)
+LIBRARY Warden
+EXPORTS
+    InitWarden            @1
+    DllGetClassObject     @2 PRIVATE
+    DllCanUnloadNow       @3 PRIVATE

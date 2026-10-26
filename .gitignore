@@ -1,0 +1,26 @@
+# build outputs
+bin/
+obj/
+*.pdb
+*.obj
+*.ilk
+*.lib
+*.exp
+*.idb
+*.log
+
+# visual studio
+.vs/
+x64/
+Debug/
+Release/
+*.user
+*.suo
+*.sln.docstates
+
+# analysis sessions (never commit dumps/logs)
+*.bin.meta.json
+
+# os
+Thumbs.db
+.DS_Store
